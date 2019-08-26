@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: 'Audiowide', cursive;
+}
+
+p {
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+.is-overlay-absolute {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.85;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #267491;
+    opacity: 0.5;
+    width: 50vw;
+    height: 300%;
+    transform: rotateZ(35deg);
+    bottom: -110px;
+    right: 0px;
+    z-index: 110;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.hero-full-screen {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: url("/img/code-pic.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  
+  .hero-full-screen .middle-content-section {
+      z-index: 200;
+    text-align: center;
+    color: #fefefe;
+  }
+  
+  .hero-full-screen .top-content-section {
+    z-index: 200;
+    width: 100%;
+  }
+  
+  .hero-full-screen .bottom-content-section {
+    z-index: 200;
+    padding: 1rem;
+  }
+  
+  .hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+  }
+  
+  .hero-full-screen .top-bar {
+    background: transparent;
+  }
+  
+  .hero-full-screen .top-bar .menu {
+    background: transparent;
+  }
+  
+  .hero-full-screen .top-bar .menu-text {
+    color: #fefefe;
+  }
+  
+  .hero-full-screen .top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .hero-full-screen .top-bar .menu a {
+    color: #fefefe;
+    font-weight: bold;
+  }
+
+  .txt:after {
+    content: '|';
+    font-weight: 100;
+    font-size: 30px;
+    animation: .7s blink steps(10) infinite alternate;
+  }
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #fff;
+    }
+    100% {
+      color: transparent;
+    }
+  }
+
+  .sections {
+    text-align: center;
+  }
+
+  .pic-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+  }
+
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .circle {
+    background-color: #082d3a;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #cfc5bc;
+  }
+
+  .skill {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-self: center;
+  }
+
+  
+ 
