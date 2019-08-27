@@ -3,11 +3,11 @@ html {
 }
 
 h1, h2 {
-    font-family: 'Audiowide', cursive;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 p {
-    font-family: 'Cabin Condensed', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .is-overlay-absolute {
@@ -23,7 +23,7 @@ p {
 
 .overlay {
     position: absolute;
-    background-color: #267491;
+    background-color: #cfc5bc;
     opacity: 0.5;
     width: 50vw;
     height: 300%;
@@ -58,9 +58,12 @@ p {
   }
   
   .hero-full-screen .middle-content-section {
-      z-index: 200;
-    text-align: center;
+    z-index: 120;
+    text-align: left;
     color: #fefefe;
+    position: absolute;
+    bottom: 45%;
+    width: 70%;
   }
   
   .hero-full-screen .top-content-section {
@@ -81,17 +84,25 @@ p {
   
   .hero-full-screen .top-bar {
     background: transparent;
+    display: block;
   }
   
   .hero-full-screen .top-bar .menu {
     background: transparent;
   }
-  
-  .hero-full-screen .top-bar .menu-text {
-    color: #fefefe;
+
+  #icon-wrapper {
+    display: flex;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    padding-top: 12px;
+    border-radius: 50%;
   }
   
   .hero-full-screen .top-bar .menu li {
+    width: 100px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -100,9 +111,23 @@ p {
             align-items: center;
   }
   
-  .hero-full-screen .top-bar .menu a {
+  .anchor-tag {
+    display: flex;
     color: #fefefe;
-    font-weight: bold;
+    width: 100px;
+    background-color: black;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 4px;
+    border-radius: 5px;
+  }
+
+  .anchor-tag a {
+    z-index: 500;
+  }
+
+  .txt {
+    color: #a7b8b5;
   }
 
   .txt:after {
@@ -124,6 +149,23 @@ p {
     }
   }
 
+  .show-for-medium .top-bar {
+    background-color: #082d3a;
+  }
+
+  .show-for-medium .top-bar .menu {
+    background-color: #082d3a;
+  }
+
+  .show-for-medium .top-bar .menu a {
+    color: #cfc5bc;
+  }
+
+  .show-for-medium .top-bar .menu a:hover {
+    background-color: #267491;
+    color: #a7b8b5;
+  } 
+
   .sections {
     text-align: center;
   }
@@ -141,6 +183,7 @@ p {
   }
 
   .circle {
+    display:flex;
     background-color: #082d3a;
     width: 100px;
     height: 100px;
@@ -152,7 +195,7 @@ p {
     width: 100px;
     height: 100px;
     text-align: center;
-    justify-self: center;
+    align-self: center;
   }
 
   
