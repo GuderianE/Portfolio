@@ -1,5 +1,12 @@
 $(document).foundation()
-const typewriterArr = ['Developer', 'Designer', 'Creator'];
+
+$(document).ready(function(){
+  $(".sticker").sticky({topSpacing:0});
+  $(".sticker2").sticky({topSpacing:50});
+
+});
+
+const typewriterArr = ['Mobile-First-Approach', 'Responsive-Design', 'Clean-Code'];
 document.addEventListener('DOMContentLoaded', init);
 
 const typeWriter = function(txtElement, words, wait = 3000) {
