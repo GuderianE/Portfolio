@@ -166,6 +166,10 @@ p {
     color: #a7b8b5;
   } 
 
+  .grid-container {
+    height: 1000px;
+  }
+
   .title-section {
     padding-top: 20px;
     font-weight: bold;
@@ -174,14 +178,18 @@ p {
 
   .pic-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
   }
 
   .profile-pic {
     width: 230px;
     height: 230px;
     border-radius: 50%;
+    align-self: center;
+    margin-bottom: 1.5em;
   }
 
   .circle {
@@ -191,17 +199,48 @@ p {
     height: 80px;
     border-radius: 50%;
     color: #cfc5bc;
+    margin-bottom: 5px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .skill {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     text-align: center;
+    padding-top: 25px;
+  }
+
+  .progress {
+    width: 50%;
+    margin-left: 10px;
     align-self: center;
+    color: #cfc5bc;
+  }
+
+  .progress-meter {
+    background-color: #082d3a;
+  }
+
+  .progress-meter-text {
+    color: #cfc5bc;
   }
 
   .project-section {
     background-color: #cfc5bc;
+  }
+
+  .flexwrapper:first-child {
+    margin-top: 30px;
   }
 
   
