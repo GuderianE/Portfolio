@@ -6,6 +6,8 @@ $(document).ready(function(){
 
 });
 
+// *-----Typewriter animation-----
+
 const typewriterArr = ['Mobile-First-Approach', 'Responsive-Design', 'Clean-Code'];
 document.addEventListener('DOMContentLoaded', init);
 
@@ -60,3 +62,26 @@ const typeWriter = function(txtElement, words, wait = 3000) {
     const wait = txtElement.getAttribute('data-wait');
     new typeWriter(txtElement, words, wait);
   }
+// *-----Typewriter animation end-----
+
+//* ----Animate Bar on scroll-----
+
+  window.addEventListener('scroll', () => {
+  const elem = document.querySelectorAll(".progress-meter");   
+  let width = 1;
+  const id = setInterval(frame, 100);
+  const scrollable = document.documentElement.scrollHeight - innerHeight;
+  const scrolled = window.scrollY;
+  console.log(scrolled);
+  function frame() {
+    if (Math.ceil(scrolled) === scrollable) {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = elem.style.width; 
+      
+    } else {
+      clearInterval(id);
+    }
+  }
+});
+//* ----Animate Bar on scroll end-----

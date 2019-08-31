@@ -133,7 +133,7 @@ p {
   .txt:after {
     content: '|';
     font-weight: 100;
-    font-size: 30px;
+    font-size: 100%;
     animation: .7s blink steps(10) infinite alternate;
   }
   
@@ -167,7 +167,10 @@ p {
   } 
 
   .grid-container {
-    height: 1000px;
+    grid-template-areas: 
+    'img'
+    'skills';
+    margin-bottom: 1.5em;
   }
 
   .title-section {
@@ -182,22 +185,26 @@ p {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     text-align: center;
+    grid-area: 'img';
   }
 
-  .profile-pic {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
+  #circle-pic {
     align-self: center;
     margin-bottom: 1.5em;
   }
 
+  .profile-pic {
+    width: 25em;
+    align-self: center;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+  }
+
   .circle {
     display:flex;
-    background-color: #082d3a;
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 12%;
     color: #cfc5bc;
     margin-bottom: 5px;
   }
@@ -205,12 +212,14 @@ p {
   .skills {
     display: flex;
     flex-direction: column;
+    grid-area:'skills';
   }
 
   .flexwrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 1em;
   }
 
   .skill {
@@ -221,6 +230,7 @@ p {
   }
 
   .progress {
+    height: 25px;
     width: 50%;
     margin-left: 10px;
     align-self: center;
@@ -229,6 +239,28 @@ p {
 
   .progress-meter {
     background-color: #082d3a;
+    animation-fill-mode:both; 
+    animation: progressBar 3s ease-in-out;
+  }
+
+  #value1 {
+    animation: progressBar 3s ease-in-out;
+  } 
+  
+  #value2 {
+    animation: progressBar1 3s ease-in-out;
+  }
+  
+  #value3 {
+    animation: progressBar2 3s ease-in-out;
+  }
+  
+  #value4 {
+    animation: progressBar3 3s ease-in-out;
+  }
+  
+  #value5 {
+    animation: progressBar4 3s ease-in-out;
   }
 
   .progress-meter-text {
@@ -243,5 +275,39 @@ p {
     margin-top: 30px;
   }
 
+  /* Animations section About */
+  @keyframes progressBar {
+    0% { width: 0; }
+    100% { width: 85%; }
+  }
   
+  @keyframes progressBar1 {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+
+  @keyframes progressBar2 {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+
+  @keyframes progressBar3 {
+    0% { width: 0; }
+    100% { width: 40%; }
+  }
+
+  @keyframes progressBar4 {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+  /* Animations section About */
+
+
+
+  @media(width:768px) {
+    .grid-container {
+      grid-template-areas: 
+      'img skills';
+    }
+  }
  
