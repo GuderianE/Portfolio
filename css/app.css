@@ -201,12 +201,27 @@ p {
   }
 
   .circle {
+    opacity: 0;
     display:flex;
     width: 80px;
     height: 80px;
     border-radius: 12%;
     color: #cfc5bc;
-    margin-bottom: 5px;
+    overflow: hidden;
+    transition: all 1.5s;
+  }
+
+  .circle.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+
+  .css, .sass {
+    transform: translateX(30%) scale(0.95);
+  }
+
+  .html, .js, .git {
+    transform: translateX(-30%) scale(0.95);
   }
 
   .skills {
@@ -215,11 +230,22 @@ p {
     grid-area:'skills';
   }
 
-  .flexwrapper {
+  .flexwrapper-left,
+  .flexwrapper-right {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    
+  }
+
+  .flexwrapper-right {
+    justify-content: flex-end;
+    margin-right: 20%;
+  }
+  
+  .flexwrapper-left {
+    justify-content: flex-start;
+    margin-left: 20%;
   }
 
   .skill {
@@ -229,78 +255,13 @@ p {
     padding-top: 25px;
   }
 
-  .progress {
-    height: 25px;
-    width: 50%;
-    margin-left: 10px;
-    align-self: center;
-    color: #cfc5bc;
-  }
-
-  .progress-meter {
-    background-color: #082d3a;
-    animation-fill-mode:both; 
-    animation: progressBar 3s ease-in-out;
-  }
-
-  #value1 {
-    animation: progressBar 3s ease-in-out;
-  } 
-  
-  #value2 {
-    animation: progressBar1 3s ease-in-out;
-  }
-  
-  #value3 {
-    animation: progressBar2 3s ease-in-out;
-  }
-  
-  #value4 {
-    animation: progressBar3 3s ease-in-out;
-  }
-  
-  #value5 {
-    animation: progressBar4 3s ease-in-out;
-  }
-
-  .progress-meter-text {
-    color: #cfc5bc;
-  }
-
   .project-section {
     background-color: #cfc5bc;
   }
 
-  .flexwrapper:first-child {
-    margin-top: 30px;
-  }
-
   /* Animations section About */
-  @keyframes progressBar {
-    0% { width: 0; }
-    100% { width: 85%; }
-  }
   
-  @keyframes progressBar1 {
-    0% { width: 0; }
-    100% { width: 90%; }
-  }
-
-  @keyframes progressBar2 {
-    0% { width: 0; }
-    100% { width: 50%; }
-  }
-
-  @keyframes progressBar3 {
-    0% { width: 0; }
-    100% { width: 40%; }
-  }
-
-  @keyframes progressBar4 {
-    0% { width: 0; }
-    100% { width: 60%; }
-  }
-  /* Animations section About */
+  /* Animations section About end*/
 
 
 

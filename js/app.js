@@ -1,4 +1,4 @@
-$(document).foundation()
+$(document).foundation();
 
 $(document).ready(function(){
   $(".sticker").sticky({topSpacing:0});
@@ -64,24 +64,36 @@ const typeWriter = function(txtElement, words, wait = 3000) {
   }
 // *-----Typewriter animation end-----
 
-//* ----Animate Bar on scroll-----
+// *-----Debounce Function-----
+function debounce(func, wait = 20, immediate = true) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+}
+// *-----Debounce Function end-----
 
-  window.addEventListener('scroll', () => {
-  const elem = document.querySelectorAll(".progress-meter");   
-  let width = 1;
-  const id = setInterval(frame, 100);
-  const scrollable = document.documentElement.scrollHeight - innerHeight;
-  const scrolled = window.scrollY;
-  console.log(scrolled);
-  function frame() {
-    if (Math.ceil(scrolled) === scrollable) {
-      width++; 
-      elem.style.width = width + '%'; 
-      elem.innerHTML = elem.style.width; 
-      
-    } else {
-      clearInterval(id);
-    }
-  }
+//* ----Animate on scroll-----
+const elem = document.querySelectorAll(".circle"); 
+  
+  const checkSlide = (e) => {
+  elem.forEach( elem => {
+  const slideinAt = (window.scrollY + window.innerHeight) - elem.height/2;
+  console.log(slideinAt);
+  if(slideinAt) {
+    elem.classList.add('active');
+  } 
+
 });
-//* ----Animate Bar on scroll end-----
+};
+
+window.addEventListener('scroll', debounce(checkSlide));
+//* ----Animate on scroll end-----
