@@ -67,84 +67,173 @@
           </div>
         <div class="skills cell">
           <div class="flexwrapper-left">
-              <img src="img/HTML-Logo.jpg" class="circle html">
+              <img src="img/HTML-Logo.jpg" class="circle html animate">
           </div>
           
           <div class="flexwrapper-right">
-              <img src="img/CSS-Logo.jpg" class="circle css">
+              <img src="img/CSS-Logo.jpg" class="circle css animate">
           </div>
           
           <div class="flexwrapper-left">
-              <img src="img/JavaScript-Logo.jpg" class="circle js">
+              <img src="img/JavaScript-Logo.jpg" class="circle js animate">
           </div>
           
           <div class="flexwrapper-right">
-              <img src="img/Sass-Logo.jpg" class="circle sass">
+              <img src="img/Sass-Logo.jpg" class="circle sass animate">
           </div>
           
           <div class="flexwrapper-left">
-              <img src="img/Git-Logo.jpg" class="circle git">
+              <img src="img/Git-Logo.jpg" class="circle git animate">
           </div>
         </div>
         </div>
-          <div class="grid-container project-section">
+          <div class="grid-container fluid project-section">
             <h1 class="title-section" id="projects">Projects</h1>
-              <div class="grid-x grid-padding-x small-up-2 medium-up-3">
+              <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3">
                 <div class="cell">
-                  <div class="card">
-                    <img src="img/rectangle-1.jpg">
-                    <div class="card-section">
-                    <h4>This is a row of cards.</h4>
-                      <p>This row of cards is embedded in an X-Y Block Grid.</p>
+                  <div class="card card-style">
+                    <img src="img/HTML-Form.png"> 
+                    <div class="card-overlay">
+                        <p><button class="button" data-open="htmlForm">HTML Form</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div class="card">
-                    <img src="img/rectangle-1.jpg">
-                    <div class="card-section">
-                      <h4>This is a card.</h4>
-                      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                  <div class="card card-style">
+                    <img src="img/Sass-samplePage.png"> 
+                    <div class="card-overlay">
+                        <p><button class="button" data-open="sass">Sass Sample Page</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div class="card">
-                    <img src="img/rectangle-1.jpg">
-                    <div class="card-section">
-                      <h4>This is a card.</h4>
-                      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                  <div class="card card-style">
+                    <img src="img/photo-gallery.png"> 
+                    <div class="card-overlay">
+                        <p><button class="button" data-open="photogal">Photo Gallery</button></p>
                     </div>
                   </div>
                 </div>
               <div class="cell">
-                <div class="card">
-                  <img src="img/rectangle-1.jpg">
-                  <div class="card-section">
-                    <h4>This is a row of cards.</h4>
-                    <p>This row of cards is embedded in an Flex Block Grid.</p>
+                <div class="card card-style">
+                  <img src="img/wheel-of-success-2.png"> 
+                  <div class="card-overlay">
+                      <p><button class="button" data-open="game">Game Show App</button></p>
                   </div>
                 </div>
               </div>
               <div class="cell">
-                <div class="card">
-                  <img src="assets/img/generic/rectangle-1.jpg">
-                  <div class="card-section">
-                    <h4>This is a card.</h4>
-                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                <div class="card card-style">
+                  <img src="img/web-app.png"> 
+                  <div class="card-overlay">
+                      <p><button class="button" data-open="webapp">Web App</button></p>
                   </div>
                 </div>
               </div>
               <div class="cell">
-                <div class="card">
-                  <img src="assets/img/generic/rectangle-1.jpg">
-                  <div class="card-section">
-                    <h4>This is a card.</h4>
-                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                <div class="card card-style">
+                  <img src="img/employee-directory.png"> 
+                  <div class="card-overlay">
+                      <p><button class="button" data-open="employeed">Employee Directory</button></p>
                   </div>
                 </div>
               </div>
             </div>
+            </div>
+            <div class="reveal" id="htmlForm" data-reveal>
+                <img src="img/HTML-Form.png">
+                <p class="lead">HTML Form</p>
+                <p>In this project, I build a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes.</p>
+                <h3>Stack:</h3>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <button class="button" url="">Click Here to View The Page-</button>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="reveal" id="sass" data-reveal>
+                <img src="img/Sass-samplePage.png">
+                <p class="lead">Sass Sample Page</p>
+                <p>With this project, I created a sass template, using partials, variables, extends, and mixins. In order to use it quickly to style other pages.</p>
+                <h3>Stack:</h3>
+                  <ul>
+                    <li>Sass</li>
+                  </ul>
+                  <button class="button" url="">Click Here to View The Page</button>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="reveal" id="photogal" data-reveal>
+                <img src="img/photo-gallery.png"> 
+                <p class="lead">Photo Gallery</p>
+                <p>In this project, I created an interactive photo gallery using JavaScript and jQuery. I implemented a search function in order to search for individual photos. When the user clicks on a thumbnail, the photo will display in a lightbox. With forward and back arrows, you can circle through the gallery.</p>
+                <h3>Stack:</h3>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <button class="button" url="">Click Here to View The Page</button>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="reveal" id="game" data-reveal>
+                <img src="img/wheel-of-success-2.png">
+                <p class="lead">Game Show App</p>
+                <p>In this project, I created a browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
+                <h3>Stack:</h3>
+                  <ul>
+                    <li>JavaScript</li>
+                  </ul>
+                  <button class="button" url="">Click Here to View The Page</button>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="reveal" id="webapp" data-reveal>
+                <img src="img/web-app.png">
+                <p class="lead">Web App</p>
+                <p> In this project,I created a web dashboard complete with JavaScript-driven charts and graphs.</p>
+                <h3>Stack:</h3>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <button class="button" url="">Click Here to View The Page</button>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="reveal" id="employeed" data-reveal>
+                <img src="img/employee-directory.png">
+                <p class="lead">Employee Directory</p>
+                <p>In this project, I created a employee directory with an API which randomly generated employees data, 12 employees I displayed on the page with their photo and personal data. When you click the employee’s image or name, a modal window with more detailed information will open.</p>
+                <h3>Stack:</h3>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <button class="button" url="">Click Here to View The Page</button>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+            <div class="grid-container fluid contact-section">
+                <h1 class="title-section" id="contact">Contact</h1>
             </div>
           
         

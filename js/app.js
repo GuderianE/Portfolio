@@ -82,15 +82,19 @@ function debounce(func, wait = 20, immediate = true) {
 // *-----Debounce Function end-----
 
 //* ----Animate on scroll-----
-const elem = document.querySelectorAll(".circle"); 
+const elem = document.querySelectorAll(".animate"); 
   
   const checkSlide = (e) => {
   elem.forEach( elem => {
   const slideinAt = (window.scrollY + window.innerHeight) - elem.height/2;
-  console.log(slideinAt);
-  if(slideinAt) {
+  const elemBottom = elem.offsetTop + elem.height;
+  const isHalfShown = slideinAt > elem.offsetTop;
+  const isNotScrolledPast = window.scrollY < elemBottom;
+  if(isHalfShown && isNotScrolledPast) {
     elem.classList.add('active');
-  } 
+  } else {
+    elem.classList.remove('active');
+  }
 
 });
 };

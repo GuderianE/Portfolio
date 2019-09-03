@@ -34,7 +34,7 @@ p {
 }
 
 .menu a {
-  color: #fff;
+  color: #cfc5bc;
 }
 
 .hero-full-screen {
@@ -93,7 +93,7 @@ p {
 
   #icon-wrapper {
     display: flex;
-    background-color: black;
+    background-color: #082d3a;
     width: 40px;
     height: 40px;
     justify-content: center;
@@ -113,9 +113,9 @@ p {
   
   .anchor-tag {
     display: flex;
-    color: #fefefe;
+    color: #cfc5bc;
     width: 100px;
-    background-color: black;
+    background-color: #082d3a;
     text-align: center;
     margin-top: 5px;
     margin-left: 8px;
@@ -201,17 +201,20 @@ p {
   }
 
   .circle {
-    opacity: 0;
     display:flex;
     width: 80px;
     height: 80px;
     border-radius: 12%;
     color: #cfc5bc;
     overflow: hidden;
+  }
+
+  .animate {
+    opacity: 0;
     transition: all 1.5s;
   }
 
-  .circle.active {
+  .animate.active {
     opacity: 1;
     transform: translateX(0%) scale(1);
   }
@@ -256,15 +259,61 @@ p {
   }
 
   .project-section {
+    color: #082d3a;
     background-color: #cfc5bc;
   }
 
-  /* Animations section About */
+  .grid-padding-x>.cell {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.card-style {
+  border-radius: 10px;
+  background-color: #cfc5bc;
+  position: relative;
+}
+
+.card-overlay {
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 20%; 
+  transition: 400ms ease-in-out;
+}
+
+.card-overlay:hover {
+  opacity: 0.8;
+  background-color: #082d3a;
+  color: #cfc5bc;
+}
+
+.button {
+  background-color: #267491;
+}
+
+.button:hover {
+  background-color: #a7b8b5;
+  color: #082d3a;
+}
+
+.contact-section {
+  background-color: #082d3a;
+  height: 100vh;
+  color: #a7b8b5;
+}
+
+.Modal {
+  background-color: #082d3a;
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
   
-  /* Animations section About end*/
-
-
-
   @media(width:768px) {
     .grid-container {
       grid-template-areas: 
