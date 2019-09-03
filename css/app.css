@@ -174,9 +174,16 @@ p {
   }
 
   .title-section {
-    padding-top: 20px;
     font-weight: bold;
     text-align: center;
+    padding-top: 20px;
+  }
+
+  #about {
+    margin: 0 auto 1em auto;
+    border-bottom: solid 2px black;
+    width: 100px;
+    height: 60px;
   }
 
   .pic-wrapper {
@@ -263,6 +270,13 @@ p {
     background-color: #cfc5bc;
   }
 
+  #projects {
+    margin: 0 auto 1em auto;
+    border-bottom: solid 2px #082d3a;
+    width: 100px;
+    height: 60px;
+  }
+
   .grid-padding-x>.cell {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -272,6 +286,10 @@ p {
   border-radius: 10px;
   background-color: #cfc5bc;
   position: relative;
+}
+
+.bottom-margin-project {
+  margin-bottom: 3em;  
 }
 
 .card-overlay {
@@ -301,8 +319,15 @@ p {
 
 .contact-section {
   background-color: #082d3a;
-  height: 100vh;
+  height: 50vh;
   color: #a7b8b5;
+}
+
+#contact {
+  margin: 0 auto;
+  border-bottom: solid 2px #a7b8b5;
+  width: 100px;
+  height: 60px;
 }
 
 .Modal {
@@ -314,6 +339,24 @@ p {
   height: 100%;
 }
   
+.address {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.social {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.sociallink {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  flex-direction: row;
+  margin: 1em .5em;
+}
   @media(width:768px) {
     .grid-container {
       grid-template-areas: 
