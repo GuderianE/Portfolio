@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 // *-----Typewriter animation-----
 
-const typewriterArr = ['Mobile-First-Approach', 'Responsive-Design', 'Clean-Code'];
+const typewriterArr = ['Mobile First Approach', 'Responsive Design', 'Clean Code'];
 document.addEventListener('DOMContentLoaded', init);
 
 const typeWriter = function(txtElement, words, wait = 3000) {
