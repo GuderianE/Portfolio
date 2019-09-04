@@ -37,7 +37,7 @@
               </h2>
           </div>
         
-          <div class="bottom-content-section" data-magellan data-threshold="25">
+          <div class="bottom-content-section" data-magellan data-threshold="100">
             <a href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
           </div>
           <div class="overlay responsive-embed">
@@ -48,7 +48,7 @@
       <div data-sticky-container class="show-for-medium">
           <div class="top-bar" data-sticky data-top-anchor="anchor:top" data-margin-top="0">
               <div class="top-bar-left">
-                    <ul class="menu horizontal show-for-medium">
+                    <ul class="menu horizontal show-for-medium" data-magellan data-threshold="100">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -57,14 +57,13 @@
               </div>
           </div>
         </div>
-      <div class="grid-container"  id="anchor">
+      <div class="grid-container fluid"  id="anchor">
           <h1 class="title-section" id="about" data-magellan-target="about">About</h1>
-          <div class="cell medium-8 large-2 pic-wrapper">
-            <div id="circle-pic">
-              <img class="profile-pic cell small-6" src="img/Elias-Profile.jpg">
+          <div class="grid-x grid-padding-x small-up-1 large-up-2">
+            <div id="circle-pic" class="pic-wrapper cell">
+              <img class="profile-pic" src="img/Elias-Profile.jpg">
+              <h4>My name is Elias and I am your Web Developer. I do responsive and UI friendly Websites, I work hard and love what I do, programming is not just a job for me but a passion.</h4>
             </div>
-            <p>My name is Elias and I am from Germany. I do responsive and UI friendly Websites, I work hard and love what I do, programming is not just a job for me but a passion.</p>
-          </div>
         <div class="skills cell">
           <div class="flexwrapper-left">
               <img src="img/HTML-Logo.jpg" class="circle html animate">
@@ -87,6 +86,7 @@
           </div>
         </div>
         </div>
+      </div>
           <div class="grid-container fluid project-section">
             <h1 class="title-section" id="projects" data-magellan-target="projects">Projects</h1>
               <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3">
@@ -234,28 +234,27 @@
 
             <div class="grid-container fluid contact-section">
                 <h1 class="title-section" id="contact" data-magellan-target="contact">Contact</h1>
-                <div class="grid-x grid-padding-x small-up-1 medium-up-2">
+                <div class="grid-x grid-padding-x small-up-1 large-up-2">
                   <div class="cell">
                     <address class="address">
-                      Elias Guderian<br>
-                      Amselweg 1<br>
-                      32457 Porta Westfalica<br>
-                      Germany<br>
-                      Tel.: 01573/3201894<br>
-                      Email: elias-guderian@outlook.com
+                      <h2 id="contactline">I'm available for freelancing, write me an Email.</h2>
+                      <a href="mailto:elias-guderian@outlook.com">
+                        <h2 id="email">elias-guderian@outlook.com</h2>
+                      </a>
                     </address>
                   </div>
                   <div class="cell social">
                     <a href="https://www.linkedin.com/in/elias-guderian-985b2ab2/" class="sociallink">
-                      <img src="img/linkedIn.png">
+                      <img src="img/linkedIn.png" class="animate">
                     </a>
                     <a href="https://github.com/GuderianE" class="sociallink">
-                      <img src="img/GitHub.png">
+                      <img src="img/GitHub.png" class="animate">
                     </a>
                     <a href="https://codepen.io/EliasG" class="sociallink">
-                      <img src="img/CodePen.png">
+                      <img src="img/CodePen.png" class="animate">
                     </a>
                   </div>
+                  <copyright id="copyright">&#169; 2019 Elias Guderian</copyright>
                 </div>
             </div>
           
