@@ -167,9 +167,6 @@ p {
   } 
 
   .grid-container {
-    grid-template-areas: 
-    'img'
-    'skills';
     margin-bottom: 1.5em;
   }
 
@@ -179,32 +176,22 @@ p {
     padding-top: 20px;
   }
 
-  #about {
-    margin: 0 auto 1em auto;
-    border-bottom: solid 2px black;
-    width: 100px;
-    height: 60px;
-  }
-
   .pic-wrapper {
     display: flex;
     flex-direction: column;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     text-align: center;
-    grid-area: 'img';
   }
 
   #circle-pic {
     align-self: center;
-    margin-bottom: 1.5em;
   }
 
   .profile-pic {
     width: 25em;
     align-self: center;
     margin-bottom: 1.5em;
-    overflow: hidden;
   }
 
   .circle {
@@ -213,7 +200,6 @@ p {
     height: 80px;
     border-radius: 12%;
     color: #cfc5bc;
-    overflow: hidden;
   }
 
   .animate {
@@ -235,9 +221,8 @@ p {
   }
 
   .skills {
-    display: flex;
-    flex-direction: column;
-    grid-area:'skills';
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
   }
 
   .flexwrapper-left,
@@ -258,23 +243,9 @@ p {
     margin-left: 20%;
   }
 
-  .skill {
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    padding-top: 25px;
-  }
-
   .project-section {
     color: #082d3a;
     background-color: #cfc5bc;
-  }
-
-  #projects {
-    margin: 0 auto 1em auto;
-    border-bottom: solid 2px #082d3a;
-    width: 100px;
-    height: 60px;
   }
 
   .grid-padding-x>.cell {
@@ -286,10 +257,11 @@ p {
   border-radius: 10px;
   background-color: #cfc5bc;
   position: relative;
+  margin-top: 3em;
 }
 
 .bottom-margin-project {
-  margin-bottom: 3em;  
+  margin-bottom: 8em;  
 }
 
 .card-overlay {
@@ -319,15 +291,7 @@ p {
 
 .contact-section {
   background-color: #082d3a;
-  height: 50vh;
   color: #a7b8b5;
-}
-
-#contact {
-  margin: 0 auto;
-  border-bottom: solid 2px #a7b8b5;
-  width: 100px;
-  height: 60px;
 }
 
 .Modal {
@@ -338,10 +302,27 @@ p {
   width: 100%;
   height: 100%;
 }
+
+#contactline {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2em;
+  border-bottom: solid 2px #a7b8b5;
+  padding-bottom: 2em;
+}
   
 .address {
-  margin-top: 2em;
-  text-align: center;
+  margin-top: 13em;
+  color: #a7b8b5;
+}
+
+#email {
+  color: #a7b8b5;
+  transition: 500ms ease;
+}
+
+#email:hover {
+  color: #267491;
 }
 
 .social {
@@ -355,12 +336,87 @@ p {
   width: 50px;
   height: 50px;
   flex-direction: row;
-  margin: 1em .5em;
+  margin: 10em .5em;
+  transition: 500ms ease-out;
 }
-  @media(width:768px) {
-    .grid-container {
-      grid-template-areas: 
-      'img skills';
+
+.sociallink:hover {
+  transform: scale(1.1);
+}
+
+#copyright {
+  margin: 0 auto;
+  padding-top: 5em;
+  padding-bottom: 4em;
+  color: rgb(71, 70, 70);
+}
+
+@media (min-width:640px) {
+    .sociallink {
+      width: 80px;
+      height: 80px;
+    }
+
+    .overlay {
+      bottom: -500px;
+      right: 300px;
+  }
+  }
+
+@media (min-width:1024px) {
+    .sociallink {
+      width: 100px;
+      height: 100px;
+      margin: 15em .5em;
+    }
+
+    .overlay {
+      bottom: -500px;
+      right: 300px;
+  }
+
+  .pic-wrapper {
+    margin-top: 8em;
+    margin-bottom: 15em;
+  }
+
+  .skills {
+    margin-top: 10em;
+    margin-bottom: 15em;
+  }
+
+  .flexwrapper-left,
+  .flexwrapper-right {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+  }
+
+  .flexwrapper-right {
+    justify-content: flex-end;
+    margin-right: 30%;
+  }
+  
+  .flexwrapper-left {
+    justify-content: flex-start;
+    margin-left: 30%;
+  }
+
+  .profile-pic {
+    width: 35em;
+  }
+
+  #projects {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  }
+
+@media (min-width:1600px) {
+    .sociallink {
+      width: 120px;
+      height: 120px;
+      margin: 15em .5em;
     }
   }
  
